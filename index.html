@@ -10,24 +10,94 @@
     
 
 </head>
-<body class="font-sans">
+<body class="font-sans bg-gray-100">
     <!-- Header Section -->
-     <header class="w-8/10 m-12 mx-auto">
-        <nav class="flex justify-between items-center">
-            <div><img src="images/logo2.png" alt=""></div>
-            <div>
-                <ul class="flex justify-between gap-4">
-                    <li><a href="#">Home</a></li>
-                    <li><a class="flex items-center"href="#">Services<img class="w-4 h-4 size-2 " src="images/icons/angle-right-solid.svg" alt=""></i></a></li>
-                    <li><a class="flex items-center "href="#">Cases<img class="w-4 h-4 size-2 " src="images/icons/angle-right-solid.svg" alt=""></i></a></li>
-                    <li><a class="flex items-center "href="#">Blog<img class="w-4 h-4 size-2 " src="images/icons/angle-right-solid.svg" alt=""></i></a></li>
-                    <li><a class="flex items-center "href="#">Contact US<img class="w-4 h-4 size-2 " src="images/icons/angle-right-solid.svg" alt=""></i></a></li>
-                </ul>
-            </div>
-            <div>
-                <button class="bg-[#B68C5A] rounded w-[220px] h-[64px] text-white font-semibold">Free Consullation</button>
-            </div>
-        </nav>
-     </header>
+     
+<header class="bg-[#e7e7e7] `mb-[70px]">
+  <nav class="max-w-7xl mx-auto px-5 py-6">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#">
+        <span class="text-3xl"><img src="images/logo2.png" alt=""></span>
+      </a>
+
+      <!-- Hamburger Checkbox -->
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="peer hidden"
+      />
+      
+      <!-- Hamburger Icon: Mobile only -->
+      <label
+        for="nav-toggle"
+        class="text-3xl cursor-pointer text-[#292929] md:hidden"
+        aria-label="Toggle navigation"
+       >
+        ☰
+      </label>
+      <!-- Navigation Links -->
+      <div
+        class="hidden peer-checked:flex
+               absolute left-0 top-20 z-50 w-full
+               flex-col items-center gap-5
+               bg-[#e7e7e7] py-6 shadow-lg
+
+               md:static md:z-auto md:flex
+               md:w-auto md:flex-row md:gap-6
+               md:bg-transparent md:py-0 md:shadow-none"
+       >
+        <a href="#" class="text-sm text-gray-600 hover:text-[#a68150]">
+          Home
+        </a>
+
+        <a href="#" class="text-sm text-gray-600 hover:text-[#a68150]">
+          Services ›
+        </a>
+
+        <a href="#" class="text-sm text-gray-600 hover:text-[#a68150]">
+          Cases ›
+        </a>
+
+        <a href="#" class="text-sm text-gray-600 hover:text-[#a68150]">
+          Blog ›
+        </a>
+
+        <a href="#" class="text-sm text-gray-600 hover:text-[#a68150]">
+          Contact Us › 
+        </a>
+
+        <!-- Consultation Button -->
+        <a
+          href="#"
+          class="bg-[#a68150] text-white font-semibold
+                 px-5 py-3 rounded-md whitespace-nowrap
+                 hover:bg-[#8d6c43]"
+
+          class="bg-[#a68150] text-white font-semibold px-5 py-3 rounded-md whitespace-nowrap
+          hover:bg-[#8d6c43]"
+        >
+          Free Consultation
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- banner section -->
+  <section class="max-w-7xl mx-auto `sm:h-[555px] flex justify-center items-center rounded-2xl  bg-[url(/images/banner.png)] bg-no-repeat bg-cover bg-center">
+        <div class="`w-[700px] text-center">
+           <h3 class="text-white sm:text-6xl  text-4xl font-extrabold mb-6">We Provide Effective  Legal Solutions</h3>
+           <h4 class="text-white text-[16px] mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</h4>
+         <div class="text-center">
+          <input class="bg-white px-20 mr-2 py-3 rounded"  type="text"  name="search" id="search" placeholder="Search Your Service">
+          <button class="py-3 px-6 bg-[#a68150] text-white rounded "><a href="#">Search</a></button>
+        </div>
+        </div>
+  </section>
+</main>
+
+
 </body>
 </html>
