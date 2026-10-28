@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="styles.css">
     <title>Legal Solution</title>
     
+    <style>
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
 
 </head>
 <body class="font-sans bg-gray-100">
@@ -97,12 +107,13 @@
         </div>
   </section>
 
-   <!-- legal practice area -->
-    <section class="max-w-7xl mx-auto mb-32">
-        <div class=" text-center max-w-1/2 mx-auto ">
-          <h1 class="text-4xl font-extrabold mb-6 text-center" >The Legal Practice Area</h1>
-          <p class="mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-        </div>
+    <!-- legal practice area -->
+    <section>
+        <div class="max-w-7xl mx-auto mb-32">
+            <div class=" text-center max-w-1/2 mx-auto ">
+               <h1 class="text-4xl font-extrabold mb-6 text-center" >The Legal Practice Area</h1>
+               <p class="mb-16">There are many variations of passages of Lorem Ipsum available,  but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
         <div class="flex  gap-0 flex-wrap justify-center">
            <div class="w-[366px] h-[500px] text-center bg-linear-to-r from-gray-50 to-gray-100 flex items-center rounded bg-white text-center  shadow-2xl">
               <div class="w-[258px] mx-auto">
@@ -153,97 +164,107 @@
               </div>
            </div>
         </div>
+      </div>
     </section>
 
-     <!-- slider with backgroud image and above content -->
-     <section>
-         <div class="max-w-7xl mx-auto p-6">
-           <h1 class="text-5xl font-bold text-center mb-6">What Our Client Say</h1>
-           <p class="text-center mx-auto w-1/2 mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-         </div>
-         
-        <div class="flex mx-auto max-w-7xl gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth">
-             <!-- slider one -->
-                <div id="testmonial-1" class="w-full snap-center shrink-0">
-                    <div  class=" scroll-mt-4 relative flex flex-col items-center justify-center min-h-[500px] bg-cover bg-center bg-gray-900 text-white rounded-lg p-8 text-center overflow-hidden" 
-                style="background-image: url('images/slider-1.jpg');">
-
-                <!-- kalo over lay -->
-                <div class="absolute inset-0 bg-black/30 rounded-lg pointer-events-none"></div>
-                <img class="relative z-10 w-20 h-20 rounded-full mx-auto mt-4 object-cover" src="images/slider-profile/imogi2.png" alt="">
-                <h3 class="relative z-10 text-lg font-bold mt-3">Md. Abu Taiab</h3>
-                <h3 class="relative z-10 text-sm text-white mt-1">Software Engineer</h3>
-               <h1 class="relative z-10 text-xl font-bold mt-4">What Our Clients Say</h1>
-               <!-- preview and next button -->
-               <a href="#testmonial-3" class="cursor-pointer absolute z-10 left-6 top-1/2 text-white "> &#10094;</a>
-               <a href="#testmonial-2" class="cursor-pointer absolute z-10 right-6 top-1/2 text-white "> &#10095;</a>
-               <!-- description -->
-               <p class="relative z-10 text-sm text-gray-200 mt-4 w-1/2  mx-auto leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text.
-                It has roots in classical literature and has been used for many years.</p>
-
-                  <!-- dot indicator -->
-                  <div class="relative z-10 flex justify-center gap-2 mt-6">
-                      <a href="#testmonial-1" class="w-3 h-3 rounded-full bg-amber-500"></a>
-                      <a href="#testmonial-2" class="w-3 h-3 rounded-full bg-white"></a>
-                      <a href="#testmonial-3" class="w-3 h-3 rounded-full bg-white"></a>
-                  </div>
-              </div>
-                </div>
-              <!-- slider two -->
-              <div id="testmonial-2" class="w-full snap-center shrink-0">
-                 <div  class=" scroll-mt-4 relative flex flex-col items-center justify-center min-h-[500px] bg-cover bg-center bg-gray-900 text-white rounded-lg p-8 text-center overflow-hidden" 
-                 style="background-image: url('images/slider-2.jpg');">
-
-                <!-- kalo over lay -->
-                <div class="absolute inset-0 bg-black/30 rounded-lg pointer-events-none"></div>
-                <img class="relative z-10 w-20 h-20 rounded-full mx-auto mt-4 object-cover" src="images/slider-profile/imogi3.png" alt="">
-                <h3 class="relative z-10 text-lg font-bold mt-3">Md. Abu Taiab</h3>
-                <h3 class="relative z-10 text-sm text-white mt-1">Software Engineer</h3>
-               <h1 class="relative z-10 text-xl font-bold mt-4">What Our Clients Say</h1>
-               <!-- preview and next button -->
-               <a href="#testmonial-1" class="cursor-pointer absolute z-10 left-6 top-1/2 text-white "> &#10094;</a>
-               <a href="#testmonial-3" class="cursor-pointer absolute z-10 right-6 top-1/2 text-white "> &#10095;</a>
-               <!-- description -->
-               <p class="relative z-10 text-sm text-gray-200 mt-4 w-1/2  mx-auto leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text.
-                It has roots in classical literature and has been used for many years.</p>
-
-                  <!-- dot indicator -->
-                  <div class="relative z-10 flex justify-center gap-2 mt-6">
-                      <a href="#testmonial-1" class="w-3 h-3 rounded-full bg-white"></a>
-                      <a href="#testmonial-2" class="w-3 h-3 rounded-full bg-amber-500"></a>
-                      <a href="#testmonial-3" class="w-3 h-3 rounded-full bg-white"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- slider three -->
-
-              <div id="testmonial-3" class="w-full snap-center shrink-0">
-                 <div  class=" scroll-mt-4 relative flex flex-col items-center justify-center min-h-[500px] bg-cover bg-center bg-gray-900 text-white rounded-lg p-8 text-center overflow-hidden" 
-                 style="background-image: url('images/slider-3.jpg');">
-
-                <!-- kalo over lay -->
-                <div class="absolute inset-0 bg-black/30 rounded-lg pointer-events-none"></div>
-                <img class="relative z-10 w-20 h-20 rounded-full mx-auto mt-4 object-cover" src="images/slider-profile/imogi4.png" alt="">
-                <h3 class="relative z-10 text-lg font-bold mt-3">Md. Abu Taiab</h3>
-                <h3 class="relative z-10 text-sm text-white mt-1">Software Engineer</h3>
-               <h1 class="relative z-10 text-xl font-bold mt-4">What Our Clients Say</h1>
-               <!-- preview and next button -->
-               <a href="#testmonial-2" class="cursor-pointer absolute z-10 left-6 top-1/2 text-white "> &#10094;</a>
-               <a href="#testmonial-1" class="cursor-pointer absolute z-10 right-6 top-1/2 text-white "> &#10095;</a>
-               <!-- description -->
-               <p class="relative z-10 text-sm text-gray-200 mt-4 w-1/2  mx-auto leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text.
-                It has roots in classical literature and has been used for many years.</p>
-
-                  <!-- dot indicator -->
-                  <div class="relative z-10 flex justify-center gap-2 mt-6">
-                      <a href="#testmonial-1" class="w-3 h-3 rounded-full bg-white"></a>
-                      <a href="#testmonial-2" class="w-3 h-3 rounded-full bg-white"></a>
-                      <a href="#testmonial-3" class="w-3 h-3 rounded-full bg-amber-500"></a>
-                  </div>
-                </div>
-              </div>
+    <!-- slider with backgroud image and above content -->
+    <section>
+        <div class="max-w-7xl mx-auto p-6">
+          <h1 class="text-5xl font-bold text-center mb-6">What Our Client Say</h1>
+          <p class="text-center mx-auto w-1/2 mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
         </div>
-     </section>
+        
+      <div class="flex mx-auto max-w-7xl gap-6
+            overflow-x-auto scrollbar-hide
+            snap-x snap-mandatory scroll-smooth ">
+            <!-- slider one -->
+              <div id="testmonial-1" class="w-full snap-center shrink-0">
+                  <div  class=" scroll-mt-4 relative flex flex-col items-center justify-center min-h-[500px] bg-cover bg-center bg-gray-900 text-white rounded-lg p-8 text-center overflow-hidden" 
+              style="background-image: url('images/slider-1.jpg');">
+
+              <!-- kalo over lay -->
+              <div class="absolute inset-0 bg-black/30 rounded-lg pointer-events-none"></div>
+              <img class="relative z-10 w-20 h-20 rounded-full mx-auto mt-4 object-cover" src="images/slider-profile/imogi2.png" alt="">
+              <h3 class="relative z-10 text-lg font-bold mt-3">Md. Abu Taiab</h3>
+              <h3 class="relative z-10 text-sm text-white mt-1">Software Engineer</h3>
+              <h1 class="relative z-10 text-xl font-bold mt-4">What Our Clients Say</h1>
+              <!-- preview and next button -->
+              <a href="#testmonial-3" class="cursor-pointer absolute z-10 left-6 top-1/2 text-white "> &#10094;</a>
+              <a href="#testmonial-2" class="cursor-pointer absolute z-10 right-6 top-1/2 text-white "> &#10095;</a>
+              <!-- description -->
+              <p class="relative z-10 text-sm text-gray-200 mt-4 w-1/2  mx-auto leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in classical literature and has been used for many years.</p>
+
+                <!-- dot indicator -->
+                <div class="relative z-10 flex justify-center gap-2 mt-6">
+                    <a href="#testmonial-1" class="w-3 h-3 rounded-full bg-amber-500"></a>
+                    <a href="#testmonial-2" class="w-3 h-3 rounded-full bg-white"></a>
+                    <a href="#testmonial-3" class="w-3 h-3 rounded-full bg-white"></a>
+                </div>
+            </div>
+              </div>
+            <!-- slider two -->
+            <div id="testmonial-2" class="w-full snap-center shrink-0">
+                <div  class=" scroll-mt-4 relative flex flex-col items-center justify-center min-h-[500px] bg-cover bg-center bg-gray-900 text-white rounded-lg p-8 text-center overflow-hidden" 
+                style="background-image: url('images/slider-2.jpg');">
+
+              <!-- kalo over lay -->
+              <div class="absolute inset-0 bg-black/30 rounded-lg pointer-events-none"></div>
+              <img class="relative z-10 w-20 h-20 rounded-full mx-auto mt-4 object-cover" src="images/slider-profile/imogi3.png" alt="">
+              <h3 class="relative z-10 text-lg font-bold mt-3">Md. Abu Taiab</h3>
+              <h3 class="relative z-10 text-sm text-white mt-1">Software Engineer</h3>
+              <h1 class="relative z-10 text-xl font-bold mt-4">What Our Clients Say</h1>
+              <!-- preview and next button -->
+              <a href="#testmonial-1" class="cursor-pointer absolute z-10 left-6 top-1/2 text-white "> &#10094;</a>
+              <a href="#testmonial-3" class="cursor-pointer absolute z-10 right-6 top-1/2 text-white "> &#10095;</a>
+              <!-- description -->
+              <p class="relative z-10 text-sm text-gray-200 mt-4 w-1/2  mx-auto leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in classical literature and has been used for many years.</p>
+
+                <!-- dot indicator -->
+                <div class="relative z-10 flex justify-center gap-2 mt-6">
+                    <a href="#testmonial-1" class="w-3 h-3 rounded-full bg-white"></a>
+                    <a href="#testmonial-2" class="w-3 h-3 rounded-full bg-amber-500"></a>
+                    <a href="#testmonial-3" class="w-3 h-3 rounded-full bg-white"></a>
+                </div>
+              </div>
+            </div>
+            <!-- slider three -->
+
+            <div id="testmonial-3" class="w-full snap-center shrink-0">
+                <div  class=" scroll-mt-4 relative flex flex-col items-center justify-center min-h-[500px] bg-cover bg-center bg-gray-900 text-white rounded-lg p-8 text-center overflow-hidden" 
+                style="background-image: url('images/slider-3.jpg');">
+
+              <!-- kalo over lay -->
+              <div class="absolute inset-0 bg-black/30 rounded-lg pointer-events-none"></div>
+              <img class="relative z-10 w-20 h-20 rounded-full mx-auto mt-4 object-cover" src="images/slider-profile/imogi4.png" alt="">
+              <h3 class="relative z-10 text-lg font-bold mt-3">Md. Abu Taiab</h3>
+              <h3 class="relative z-10 text-sm text-white mt-1">Software Engineer</h3>
+              <h1 class="relative z-10 text-xl font-bold mt-4">What Our Clients Say</h1>
+              <!-- preview and next button -->
+              <a href="#testmonial-2" class="cursor-pointer absolute z-10 left-6 top-1/2 text-white "> &#10094;</a>
+              <a href="#testmonial-1" class="cursor-pointer absolute z-10 right-6 top-1/2 text-white "> &#10095;</a>
+              <!-- description -->
+              <p class="relative z-10 text-sm text-gray-200 mt-4 w-1/2  mx-auto leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in classical literature and has been used for many years.</p>
+
+                <!-- dot indicator -->
+                <div class="relative z-10 flex justify-center gap-2 mt-6">
+                    <a href="#testmonial-1" class="w-3 h-3 rounded-full bg-white"></a>
+                    <a href="#testmonial-2" class="w-3 h-3 rounded-full bg-white"></a>
+                    <a href="#testmonial-3" class="w-3 h-3 rounded-full bg-amber-500"></a>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- frequently ask question section -->
+    <section>
+        <div class="max-w-7xl mx-auto mb-[120px]">
+
+        </div>
+    </section>
 
 </main>
 
